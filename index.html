@@ -14,6 +14,70 @@
 
     <body>
 
+        <main>
+            <section>
+                <!-- Corps calculatrice-->
+                <div class="container border border-2 border-danger">
+                    <div id="screen" class="row col-12 col-md-4">
+                        <select class="form-select" aria-label="Select mode">
+                            <option selected>Standard</option>
+                            <option value="scientifique">Scientifique</option>
+                            <option value="date">Date</option>
+                        </select>
+                        <div class="input">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="clavier" class="row col-12 col-md-4">
+                        <div class="line d-flex p-0">
+                            <button class="reset">CE</button>
+                            <button class="reset">C</button>
+                            <button class="reset">Re</button>
+                            <button class="operation">/</button>
+                        </div>
+                        <div class="line d-flex p-0">
+                            <button class="touche">7</button>
+                            <button class="touche">8</button>
+                            <button class="touche">9</button>
+                            <button class="operation">*</button>
+                        </div>
+                        <div class="line d-flex p-0">
+                            <button class="touche">4</button>
+                            <button class="touche">5</button>
+                            <button class="touche">6</button>
+                            <button class="operation">-</button>
+                        </div>
+                        <div class="line d-flex p-0">
+                            <button class="touche">1</button>
+                            <button class="touche">2</button>
+                            <button class="touche">3</button>
+                            <button class="operation">+</button>
+                        </div>
+                        <div class="line d-flex p-0">
+                            <button class="touche">,</button>
+                            <button class="touche">0</button>
+                            <button class="touche">%</button>
+                            <button class="equal">=</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--<main class="border border-2 border-danger d-flex justify-content-around">
+            <section class="border boder-2 border-dark">
+                <div class="w-100 h-100">
+
+                    <div id="clavier" class="border border-2 border-warning">
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="border border-2 border-info">
+                <h1>Blablablbablab</h1>
+            </section>
+        </main>-->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script>
           var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
