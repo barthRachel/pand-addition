@@ -122,10 +122,12 @@ equalKey.addEventListener('click', () => {
 
         screenInput.innerText = calculateWithOpe(res, tempNum2, tempOpe)
         screenProgress.innerText = res + " " + tempOpe + " " + tempNum2 + " = "
+        console.log("cas 2 equal")
     } else {
         let temp = screenProgress.innerText
         screenProgress.innerText = temp + " " + screenInput.innerText + " = "
         screenInput.innerText = calculate(screenInput.innerText, temp)
+        console.log("cas 3 equal")
     }
 })
 
@@ -138,6 +140,35 @@ keyComa.addEventListener('click', () => {
             console.log("Nope coma")
         } else {
             screenInput.innerText += "."
+        }
+    }
+})
+
+keyPercent.addEventListener('click', () => {
+    if(screenProgress.innerText === "" || screenProgress.innerText === "0") { //progress = vide OU progress = 0
+        if(screenInput.innerText === "" || screenInput.innerText === "0"){ //input = vide OU input = 0
+            resetProgress()
+            screenInput.innerText = "0"
+            console.log("premier cas")
+        } else if (screenInput.innerText !== "" || screenInput.innerText !== "0") { //input < 0 OU input > 0
+            resetProgress()
+            screenInput.innerText = "0"
+            console.log("second cas")
+        }
+    } else if(screenProgress.innerText !== "" || screenProgress.innerText !== "0") { //progress pas vide OU pas 0
+        if(screenInput.innerText === "" || screenInput.innerText === "0"){
+            resetProgress()
+            screenInput.innerText ="0"
+        } else if(screenInput.innerText !== "" || screenInput.innerText !== "0") {
+            let tempNumber1 = screenProgress.innerText.split(" ")[0]
+            let tempNumber2 = screenInput.innerText
+            let tempOperation = screenProgress.innerText.split(" ")[1]
+            let percent = ((calculateWithOpe(tempNumber1, tempNumber2, "*")) / 100).toString();
+            
+            screenProgress.innerText = tempNumber1 + " " + tempOperation ;
+            screenInput.innerText = percent
+
+            console.log("quatrième cas")
         }
     }
 })
