@@ -93,7 +93,7 @@ Array.prototype.forEach.call(resetList, (item) => {
         } else if(e.target.innerText === "C") {
             resetProgress()
             screenInput.innerText = "0"
-        } else if(e.target.innerText === "Re") {
+        } else if(e.target.innerText === "\u21d0") {
             if(screenProgress.innerText.includes("=")) {
                 resetProgress()
             } else if(screenInput.innerText === "0") 

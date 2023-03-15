@@ -1,5 +1,4 @@
 #clavier, #screen {
-    border: 2px solid red;
 }
 
 main {
@@ -7,9 +6,15 @@ main {
     flex-direction: column;
 }
 
+.calculator {
+    border-radius: 5px;
+}
+
 /**Ecran Calculatrice**/
 .input {
     height: 100px;
+    background-color: #FFD6DC;
+    /*background: linear-gradient(284deg, rgba(255,214,220,1) 0%, rgba(255,180,191,1) 50%, rgba(250,76,137,1) 100%);*/
 }
 
 #screen_input {

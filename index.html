@@ -15,25 +15,26 @@
     <body>
 
         <main>
-            <section class="container d-flex flex-column flex-md-row justify-content-around border border-2 border-dark col-12">
+            <h1 class="d-block d-md-none text-center mt-3 mt-md-0">Pand'Addition</h1>
+            <section class="container mt-3 mt-md-5 d-flex flex-column flex-md-row justify-content-around col-12">
                 <!-- Corps calculatrice-->
-                <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0 me-0 me-md-4 border border-2 border-success">
+                <div class="calculator col-12 col-md-4 col-lg-3 mb-4 mb-md-0 me-0 me-md-4 border border-2 border-dark">
                     <div id="screen" class="">
                         <select class="form-select" aria-label="Select mode">
                             <option selected>Standard</option>
                             <option value="scientifique">Scientifique</option>
                             <option value="date">Date</option>
                         </select>
-                        <div class="input border border-2 border-warning d-flex flex-column">
-                            <p id="screen_progess" class="m-0 border border-2 border-info pe-3 hideProgress"></p>
-                            <p id="screen_input" class="m-0 border border-2 border-success d-flex justify-content-end align-items-center pe-3">0</p>
+                        <div class="input d-flex flex-column">
+                            <p id="screen_progess" class="m-0 pe-3 hideProgress"></p>
+                            <p id="screen_input" class="m-0 d-flex justify-content-end align-items-center pe-3">0</p>
                         </div>
                     </div>
                     <div id="clavier" class="">
                         <div class="line d-flex p-0">
                             <button class="reset">CE</button>
                             <button class="reset">C</button>
-                            <button class="reset">Re</button>
+                            <button class="reset">&#x21D0;</button>
                             <button class="operation">/</button>
                         </div>
                         <div class="line d-flex p-0">
@@ -63,12 +64,12 @@
                     </div>
                 </div>
 
-                <aside class="border border-2 border-info col-12 col-md-7 col-lg-9">
-                    <h1>Pand'Addition</h1>
+                <aside class="ps-md-4 col-12 col-md-7 col-lg-9">
+                    <h1 class="d-none d-md-block">Pand'Addition</h1>
                     <p>Parce que je sais que certains ne connaissent pas la signification des touches. Bah je vais les mettre en dessous ! 😂</p>
                     <p>CE &#8594; Reset du nombre entier en cours (le gros là !).</p>
                     <p>C &#8594; Reset du calcul entier en cours (adios le calcul !).</p>
-                    <p>Re &#8594; Supprimer le dernier chiffre entrer.</p>
+                    <p>&#x21D0; &#8594; Supprimer le dernier chiffre entrer.</p>
                     <p>( / * - + ) &#8594; Les opérations classiques : Division, multiplication, soustraction, addition</p>
                     <p>Les touches vont sûrement changer entre temps. Au moins tu sais...</p>
                 </aside>
