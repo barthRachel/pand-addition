@@ -15,20 +15,21 @@
     <body>
 
         <main>
-            <section>
+            <section class="container d-flex flex-column flex-md-row justify-content-around border border-2 border-dark col-12">
                 <!-- Corps calculatrice-->
-                <div class="container border border-2 border-danger">
-                    <div id="screen" class="row col-12 col-md-4">
+                <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0 me-0 me-md-4 border border-2 border-success">
+                    <div id="screen" class="">
                         <select class="form-select" aria-label="Select mode">
                             <option selected>Standard</option>
                             <option value="scientifique">Scientifique</option>
                             <option value="date">Date</option>
                         </select>
-                        <div class="input">
-                            <p></p>
+                        <div class="input border border-2 border-warning d-flex flex-column">
+                            <p id="screen_progess" class="m-0 border border-2 border-info pe-3 hideProgress"></p>
+                            <p id="screen_input" class="m-0 border border-2 border-success d-flex justify-content-end align-items-center pe-3">0</p>
                         </div>
                     </div>
-                    <div id="clavier" class="row col-12 col-md-4">
+                    <div id="clavier" class="">
                         <div class="line d-flex p-0">
                             <button class="reset">CE</button>
                             <button class="reset">C</button>
@@ -36,31 +37,37 @@
                             <button class="operation">/</button>
                         </div>
                         <div class="line d-flex p-0">
-                            <button class="touche">7</button>
-                            <button class="touche">8</button>
-                            <button class="touche">9</button>
+                            <button class="key">7</button>
+                            <button class="key">8</button>
+                            <button class="key">9</button>
                             <button class="operation">*</button>
                         </div>
                         <div class="line d-flex p-0">
-                            <button class="touche">4</button>
-                            <button class="touche">5</button>
-                            <button class="touche">6</button>
+                            <button class="key">4</button>
+                            <button class="key">5</button>
+                            <button class="key">6</button>
                             <button class="operation">-</button>
                         </div>
                         <div class="line d-flex p-0">
-                            <button class="touche">1</button>
-                            <button class="touche">2</button>
-                            <button class="touche">3</button>
+                            <button class="key">1</button>
+                            <button class="key">2</button>
+                            <button class="key">3</button>
                             <button class="operation">+</button>
                         </div>
                         <div class="line d-flex p-0">
-                            <button class="touche">,</button>
-                            <button class="touche">0</button>
-                            <button class="touche">%</button>
+                            <button class="keyComa">,</button>
+                            <button class="key">0</button>
+                            <button class="keyPercent">%</button>
                             <button class="equal">=</button>
                         </div>
                     </div>
                 </div>
+
+                <aside class="border border-2 border-info col-12 col-md-7 col-lg-9">
+                    <h1>kqhsdkklsqd</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rerum dolorem sequi suscipit, animi explicabo adipisci officia ipsum obcaecati, perferendis dignissimos iure molestiae voluptatem sapiente. Debitis ipsum blanditiis commodi nostrum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum, blanditiis eligendi cum iusto exercitationem laudantium excepturi obcaecati aliquam asperiores, saepe, necessitatibus odit perferendis libero iste sint architecto soluta a?</p>
+                </aside>
             </section>
         </main>
 

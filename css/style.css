@@ -2,9 +2,34 @@
     border: 2px solid red;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 /**Ecran Calculatrice**/
 .input {
-    height: 50px;
+    height: 100px;
+}
+
+#screen_input {
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+}
+
+#screen_progress {
+    font-size: 16px;
+}
+
+.hideProgress {
+    display: none;
+}
+
+.showProgress {
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 /**Clavier Calculatrice**/
