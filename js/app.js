@@ -16,7 +16,7 @@ function calculate(screenInput, screenProgress){
         result = number1 + number2
     } else if(operation === "-") {
         result = number1 - number2
-    } else if (operation === "*") {
+    } else if (operation === "x") {
         result = number1 * number2
     } else if (operation === "/") {
         result = number1 / number2
@@ -33,7 +33,7 @@ function calculateWithOpe(number1, number2, operation) {
         result = number1 + number2
     } else if(operation === "-") {
         result = number1 - number2
-    } else if (operation === "*") {
+    } else if (operation === "x") {
         result = number1 * number2
     } else if (operation === "/") {
         result = number1 / number2

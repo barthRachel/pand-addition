@@ -61,6 +61,73 @@ button {
     background-color: #FA4C89;
 }
 
+/**Bloc explications**/
+#explainations h1 {
+    color: white;
+}
+
 #explainations p{
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    color: white;
+}
+
+#explainations {
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+#explainations:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #F9246F, #FA4C89, #FB74A3, #FC9CBD, #FDAFCB, #FDC3D9);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+  
+  
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  
+  
+  
+
+/**Footer**/
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(284deg, rgba(255,214,220,1) 0%, rgba(255,180,191,1) 50%, rgba(250,76,137,1) 100%);
+    margin-top: 1rem;
+}
+
+#linkPanda:hover {
+    text-decoration: underline double;
+}
+
+.fab:hover{
+    box-shadow: 5px 5px 26px 14px rgba(250,76,137,1);
+    transition: box-shadow 0.30s ease-in-out;
+}
+
+@media (min-width:768px) {
+    footer {
+        margin-top: 80px;
+    }
 }

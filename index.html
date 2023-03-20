@@ -31,17 +31,17 @@
                         </div>
                     </div>
                     <div id="clavier" class="">
-                        <div class="line d-flex p-0">
+                        <div class="mt-1 line d-flex p-0">
                             <button class="reset">CE</button>
                             <button class="reset">C</button>
                             <button class="reset">&#x21D0;</button>
-                            <button class="operation">/</button>
+                            <button class="operation">&#247;</button>
                         </div>
                         <div class="line d-flex p-0">
                             <button class="key">7</button>
                             <button class="key">8</button>
                             <button class="key">9</button>
-                            <button class="operation">*</button>
+                            <button class="operation">&#215;</button>
                         </div>
                         <div class="line d-flex p-0">
                             <button class="key">4</button>
@@ -55,7 +55,7 @@
                             <button class="key">3</button>
                             <button class="operation">+</button>
                         </div>
-                        <div class="line d-flex p-0">
+                        <div class="mb-1 line d-flex p-0">
                             <button class="keyComa">,</button>
                             <button class="key">0</button>
                             <button class="keyPercent">%</button>
@@ -70,26 +70,40 @@
                     <p>CE &#8594; Reset du nombre entier en cours (le gros là !).</p>
                     <p>C &#8594; Reset du calcul entier en cours (adios le calcul !).</p>
                     <p>&#x21D0; &#8594; Supprimer le dernier chiffre entrer.</p>
-                    <p>( / * - + ) &#8594; Les opérations classiques : Division, multiplication, soustraction, addition</p>
+                    <p>[ &#247; / &#215; / - / + ] &#8594; Les opérations classiques : Division, multiplication, soustraction, addition</p>
                     <p>Les touches vont sûrement changer entre temps. Au moins tu sais...</p>
                     <p>[COMING SOON] - Calcul de date beacause why not ?</p>
                 </aside>
             </section>
         </main>
-
-        <!--<main class="border border-2 border-danger d-flex justify-content-around">
-            <section class="border boder-2 border-dark">
-                <div class="w-100 h-100">
-
-                    <div id="clavier" class="border border-2 border-warning">
-                        
+        
+        <footer class="py-3">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 col-md-4 text-md-end">
+                        <p class="fw-bold text-dark">&#169; <a id="linkPanda" class="text-dark" href="https://pandadev.fr/" target="_blank">PandaDev</a> - 2023</p>
+                    </div>
+                    <div class="col-12 col-md-4 offset-md-4 text-md-start">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/rachel-barthelery/" target="_blank" class="text-decoration-none text-dark">
+                                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/barthRachel" target="_blank" class="text-decoration-none text-dark">
+                                    <i class="fab fa-github-square fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-            <section class="border border-2 border-info">
-                <h1>Blablablbablab</h1>
-            </section>
-        </main>-->
+            </div>
+        </footer>
+
+        <div class="d-none d-md-block text-center mt-3">
+            <img src="https://media.giphy.com/media/yylKafjTgVoRO/giphy.gif" width="300px" alt="">
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script>
